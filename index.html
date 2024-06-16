@@ -190,11 +190,16 @@
         <div class="content">
           <h2 class="title is-3">Method Overview</h2>
           <center>
-          <img src="static/images/overview.jpg" alt="Overview" class="center-image blend-img-background"/>
+          <img src="static/images/framework.jpg" alt="Overview" class="center-image blend-img-background"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
-               The T2S system transmutes testing descriptive text into simulator-ready
+               We investigate the potential of leveraging LLMs within a multi-agent framework to enhance the decision-making capabilities of autonomous driving system. This study aims to develop a multi-agent autonomous driving decision-making framework based on large language model, which simulates human decision-making process and combines LLM's own reasoning ability to form knowledge-driven, so as to improve the safety and efficiency of LLM agents driving in relatively complex environments. The framework consists of five complete modules: environment module, multi-agent interaction module, multi-step planning module, shared-memory module and ranking-based reflection module. The specific research contents are as follows:
+              (1) Environment module: Create a realistic autonomous driving simulation scenario for highway ramp merging, and convert the simulation images and data into textual descriptions of the scene to serve as part of the input for the Large Language Model.
+              (2) Multi-agent interaction module:By meticulously analyzing the historical behaviors and real-time status information of other vehicles to infer their potential intentions, the intelligent agent can formulate a series of subsequent action plans, achieving implicit interactions similar to those of human drivers.
+              (3) Multi-step planning module: build a three-layer progressive thinking chain of goal - plan - action, so that the LLM can reason and think step by step and layer for complex scenes, and get the final action decision.
+              (4) Shared-memory module: Develop a unified vector database accessible to all Large Language Model (LLM) agents, ensuring consistency in experience and performance. This approach is akin to the parameter-sharing mechanism used among multiple agents in reinforcement learning, which achieves similar benefits.
+              (5) Ranking-based reflection module: By employing specific metrics to quantify the safety and efficiency of the vehicle's state after each action decision is executed, the reflection agent reflects on and revises low-scoring erroneous decisions after the scenario concludes. Finally, the revised decisions, along with high-scoring ones, are stored in the shared memory module for collective learning and improvement.
             </p>
           </div>
         </div>
@@ -202,6 +207,97 @@
     </div>
   </div>
 </section>
+
+<!-- Prompt Engineering -->
+<section class="Prompt Engineering ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Reasoning process</h2>
+          <center>
+          <img src="static/images/reasoning.jpg" alt="Prmpt" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+               The multi-step planning module is a chain of thought(CoT) to guide LLM make the final action decision.LLM firstly analyzes the goal according to the current scenario, then makes the plan, and finally makes the action decision. 
+              This structured planning process enables the LLM agent to maintain a clear goal for its actions and more effectively pursue long-term goals. Based on the textual description of the current scene and the experiential playback of historical similar scenes, the LLM finally selects an action decision through continuous analysis and then returns the action decision to the environment module for execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Other scenarios for testing generalization capabilities.</bold></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <!-- <h4 class="title is-4" style="text-align: center; padding-bottom: 10px;"><bold>New Reset Distributions</bold></h4> -->
+          <p style="text-align: center; font-size: 18px"></p>
+          <div class="columns is-centered">
+            <div class="column is-centered">
+                <img src="static/videos/1.gif" style="border-radius:14px;border: 1px solid black;">
+                <p style="text-align: center; font-size: 18px">Control loss</p>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <img src="static/videos/2.gif" style="border-radius:10px;border: 1px solid black;">
+                <p style="text-align: center; font-size: 18px">Traffic negotiation</p>
+              </div>
+            </div>
+            <div class="column is-centered">
+              <div class="video-container">
+                <img src="static/videos/3.gif" style="border-radius:10px;border: 1px solid black;">
+                <p style="text-align: center; font-size: 18px">Right turn at an intersection with crossing traffic</p>
+              </div>
+            </div>
+          </div>   
+        </div> 
+      </div>
+    </div>
+  </section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            Acknowledgements: The authors would like to appreciate the financial support
+            of 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     
 </body>
 </html>
