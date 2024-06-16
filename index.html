@@ -80,7 +80,7 @@
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>Beihang University, 100191, Beijing, P.R.China.,</span>
                     <span class="author-block"><sup>2</sup>Zhongguancun National Laboratory, 100191, Beijing, P.R.China. </span>
-                    <span class="eql-cntrb"><small><br><sup></sup>First author: caixuan@buaa.edu.cn</small></span>
+                    <span class="eql-cntrb"><small><br><sup></sup>First author: jiangkemou@buaa.edu.cn</small></span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author: zhiyongc@buaa.edu.com, yilongren@buaa.edu.com</small></span>
                   </div>
 
@@ -89,7 +89,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/Text2Scenario__Text_Driven_Scenario_Generation_for_Autonomous_Driving_Test.pdf" target="_blank"
+                      <a href="static/pdfs/KoMA.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -106,17 +106,6 @@
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
-                  </a>
-                </span>
-
-                  <!-- Google link -->
-                  <span class="link-block">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUoDLjNLBwgTNYyCRd9KYRjg4RML9LKa-GXPeeKcCOjiSk5g/viewform?usp=sf_link" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-google"></i>
-                    </span>
-                    <span>Google Sheet</span>
                   </a>
                 </span>
 
@@ -138,5 +127,81 @@
   </div>
 </section>
 
+    <!-- on-ramp video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/test_exp_1_4_2-episode-0.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        The scenario of merging onto the highway from an entrance ramp.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End on-ramp video -->
+
+<!-- Paper abstract -->
+<section class="abstract">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) as autonomous agents offer a novel avenue for tackling real-world challenges through a knowledge-driven manner. 
+            These LLM-enhanced methodologies excel in generalization and interpretability. 
+            However, the complexity of driving tasks often necessitates the collaboration of multiple, heterogeneous agents, underscoring the need for such LLM-driven agents to engage in cooperative knowledge sharing and cognitive synergy.
+            Despite the promise of LLMs, current applications predominantly center around single-agent scenarios, which limits their scope in the face of intricate, interconnected tasks. 
+            To broaden the horizons of knowledge-driven strategies and bolster the generalization capabilities of autonomous agents, we propose the KoMA framework consisting of the multi-agent interaction, the multi-step planning, the shared-memory, and the ranking-based reflection modules to enhance multi-agents' decision-making in complex driving scenarios.
+            Based on the framework's generated  text descriptions of driving scenarios, the multi-agent interaction module enables LLM agents to analyze and infer the intentions of surrounding vehicles based on scene information , akin to human cognition. 
+            The multi-step planning module enables LLM agents to analyze and obtain final action decisions layer by layer to ensure consistent goals for short-term action decisions. 
+            The shared memory module can accumulate collective experience to make superior decisions, and the ranking-based reflection module can evaluate and improve agent behavior with the aim of enhancing driving safety and efficiency. 
+            The KoMA framework not only enhances the robustness and adaptability of autonomous driving agents but also significantly elevates their generalization capabilities across diverse scenarios.
+            Empirical results demonstrate the superiority of our approach over traditional methods, particularly in its ability to handle complex, unpredictable driving environments without extensive retraining.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <h3 class="title is-3" style="text-align: center; padding-bottom: 5px; color: rgb(63	172	38)"><bold>Overview of the KoMA framework</bold></h3>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Method Overview -->
+<section class="Overview">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Method Overview</h2>
+          <center>
+          <img src="static/images/overview.jpg" alt="Overview" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+               The T2S system transmutes testing descriptive text into simulator-ready
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
 </body>
 </html>
